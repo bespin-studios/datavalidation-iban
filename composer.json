@@ -1,6 +1,6 @@
 {
   "name": "bespin/iban",
-  "description": "Library for IBAN verification and other helpers",
+  "description": "Library for IBAN verification and other IBAN helpers",
   "minimum-stability": "stable",
   "license": "proprietary",
   "authors": [
