@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/bespin-studios/iban/compare/v1.0.1...v1.0.2) (2024-09-24)
+
+
+### Bug Fixes
+
+* verify won't throw exceptions anymore and can be used consistently in conditions without try catch ([b105589](https://github.com/bespin-studios/iban/commit/b105589a95c3e96ee7c7eef611c04208f1b7e6af))
+
 ## [1.0.1](https://github.com/bespin-studios/iban/compare/v1.0.0...v1.0.1) (2024-09-24)
 
 
