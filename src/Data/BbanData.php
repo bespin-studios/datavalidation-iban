@@ -55,16 +55,16 @@ class BbanData
     public function getBankIdentifier(): string
     {
         $positionParts = explode('-', $this->bankIdentifierPosition);
-        $offset = array_key_exists(0, $positionParts) ? intval($positionParts[0]) : null;
-        $length = array_key_exists(1, $positionParts) ? intval($positionParts[1]) : null;
+        $offset        = array_key_exists(0, $positionParts) ? intval($positionParts[0]) : null;
+        $length        = array_key_exists(1, $positionParts) ? intval($positionParts[1]) : null;
         return $this->getSubString($offset, $length, $this->bankIdentifierPattern);
     }
 
     public function getBranchIdentifier(): string
     {
         $positionParts = explode('-', $this->branchIdentifierPosition);
-        $offset = array_key_exists(0, $positionParts) ? intval($positionParts[0]) : null;
-        $length = array_key_exists(1, $positionParts) ? intval($positionParts[1]) : null;
+        $offset        = array_key_exists(0, $positionParts) ? intval($positionParts[0]) : null;
+        $length        = array_key_exists(1, $positionParts) ? intval($positionParts[1]) : null;
         return $this->getSubString($offset, $length, $this->branchIdentifierPattern);
     }
 
@@ -196,5 +196,35 @@ class BbanData
             $result += intval(preg_replace('/\D/', '', $part));
         }
         return $result;
+    }
+
+    public function getPropertyLength(): string
+    {
+        return $this->length;
+    }
+
+    public function getPropertyPattern(): string
+    {
+        return $this->pattern;
+    }
+
+    public function getPropertyBankIdentifierSwiftFormat(): string
+    {
+        return $this->bankIdentifierSwiftFormat;
+    }
+
+    public function getPropertyBankIdentifierExample(): string
+    {
+        return $this->bankIdentifierExample;
+    }
+
+    public function getPropertyBranchIdentifierSwiftFormat(): string
+    {
+        return $this->branchIdentifierSwiftFormat;
+    }
+
+    public function getPropertyBranchIdentifierExample(): string
+    {
+        return $this->branchIdentifierExample;
     }
 }
