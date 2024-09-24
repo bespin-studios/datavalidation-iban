@@ -4,16 +4,19 @@ namespace Bespin\IBAN;
 
 use Bespin\IBAN\Countries\CountryInterface;
 use Exception;
+use Throwable;
 
 class Iban
 {
-    /**
-     * @throws Exception
-     */
     public static function verify(string $iban, bool $isAlreadyMachineFormat = false): bool
     {
         if ($isAlreadyMachineFormat === false) {
-            $iban = self::format($iban);
+            try {
+                $iban = self::format($iban);
+            } catch (Throwable) {
+                // failure to format the iban is automatically an invalid iban
+                return false;
+            }
         }
         $country = self::getCountryObject($iban);
         if ($country === null) {
