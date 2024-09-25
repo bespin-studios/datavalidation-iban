@@ -1,4 +1,4 @@
 .DS_Store
 .idea
 vendor
-src/test.php
+src/Iban/Data/iban_registry*.txt

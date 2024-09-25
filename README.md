@@ -5,19 +5,19 @@ This is a collection of methods to verify and format IBAN
 ## Verify
 This command will verify the IBAN 
 ```
-\Bespin\IBAN\Iban::verify('DE12 3456 7890 0000 9999 88');
+\Bespin\DataValidation\Iban::verify('DE12 3456 7890 0000 9999 88');
 ```
 
 ## Format
 ### Human readable
 This will format a IBAN to a string with whitespace
 ```
-\Bespin\IBAN\Iban::format('DE12345678900000999988', \Bespin\IBAN\Format::human);
+\Bespin\DataValidation\Iban::format('DE12345678900000999988', \Bespin\DataValidation\Format::human);
 ```
 ### Machine readable
 This will format an IBAN to a string without any whitespace
 ```
-\Bespin\IBAN\Iban::format('DE12 3456 7890 0000 9999 88', \Bespin\IBAN\Format::machine);
+\Bespin\DataValidation\Iban::format('DE12 3456 7890 0000 9999 88', \Bespin\DataValidation\Format::machine);
 ```
 
 # Supported Countries
