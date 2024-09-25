@@ -1,8 +1,8 @@
 {
-  "name": "bespin/iban",
+  "name": "bespin/datavalidation-iban",
   "description": "Library for IBAN verification and other IBAN helpers",
   "minimum-stability": "stable",
-  "license": "proprietary",
+  "license": "MPL-2.0",
   "authors": [
     {
       "name": "Lars Hennig",
@@ -16,11 +16,11 @@
   },
   "autoload": {
     "psr-4": {
-      "Bespin\\IBAN\\": "src"
+      "Bespin\\DataValidation\\": "src"
     }
   },
   "require-dev": {
-    "phpstan/phpstan": "^1.11.4"
+    "phpstan/phpstan": "^1.12.4"
   },
   "require": {
     "ext-ctype": "*"

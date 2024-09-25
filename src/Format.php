@@ -1,6 +1,6 @@
 <?php
 
-namespace Bespin\IBAN;
+namespace Bespin\DataValidation;
 
 enum Format
 {

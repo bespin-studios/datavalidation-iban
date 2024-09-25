@@ -1,8 +1,8 @@
 <?php
 
-namespace Bespin\IBAN;
+namespace Bespin\DataValidation;
 
-use Bespin\IBAN\Countries\CountryInterface;
+use Bespin\DataValidation\Iban\Countries\CountryInterface;
 use Exception;
 use Throwable;
 
