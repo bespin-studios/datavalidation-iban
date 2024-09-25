@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/bespin-studios/datavalidation-iban/compare/v1.0.3...v1.0.4) (2024-09-25)
+
+
+### Bug Fixes
+
+* use format from shared package ([4b3d95c](https://github.com/bespin-studios/datavalidation-iban/commit/4b3d95c46407fa1c74aa116bbb3b8bbf4c759a3d))
+
 ## [1.0.3](https://github.com/bespin-studios/datavalidation-iban/compare/v1.0.2...v1.0.3) (2024-09-25)
 
 
