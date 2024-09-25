@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/bespin-studios/datavalidation-iban/compare/v1.0.2...v1.0.3) (2024-09-25)
+
+
+### Bug Fixes
+
+* update documentation to reflect the new namespaces ([eb1243d](https://github.com/bespin-studios/datavalidation-iban/commit/eb1243da2ed719e7142b09be144fc859a3946dd3))
+
 ## [1.0.2](https://github.com/bespin-studios/iban/compare/v1.0.1...v1.0.2) (2024-09-24)
 
 
