@@ -23,6 +23,7 @@
     "phpstan/phpstan": "^1.12.4"
   },
   "require": {
-    "ext-ctype": "*"
+    "ext-ctype": "*",
+    "bespin/datavalidation-shared": "*"
   }
 }

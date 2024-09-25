@@ -4,8 +4,49 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b26d719c108609ab38ba32a87bee83f9",
-    "packages": [],
+    "content-hash": "be6f698e6a8992f398aa592ce77f28c0",
+    "packages": [
+        {
+            "name": "bespin/datavalidation-shared",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bespin-studios/datavalidation-shared.git",
+                "reference": "eb84ce7c2724a650e38bf6b090e5cf4f5503aaf3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bespin-studios/datavalidation-shared/zipball/eb84ce7c2724a650e38bf6b090e5cf4f5503aaf3",
+                "reference": "eb84ce7c2724a650e38bf6b090e5cf4f5503aaf3",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^1.11.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Bespin\\DataValidation\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Lars Hennig",
+                    "email": "lars@bespin-studios.com"
+                }
+            ],
+            "description": "Shared components for bespin/datavalidation packages",
+            "support": {
+                "issues": "https://github.com/bespin-studios/datavalidation-shared/issues",
+                "source": "https://github.com/bespin-studios/datavalidation-shared/tree/v1.1.0"
+            },
+            "time": "2024-09-25T13:10:30+00:00"
+        }
+    ],
     "packages-dev": [
         {
             "name": "phpstan/phpstan",
