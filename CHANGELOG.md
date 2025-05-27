@@ -1,3 +1,11 @@
+## [1.0.5](https://github.com/bespin-studios/datavalidation-iban/compare/v1.0.4...v1.0.5) (2025-05-27)
+
+
+### Bug Fixes
+
+* explode always returns a non-empty array when the separator is not empty and the limit is not negative ([dbf7f22](https://github.com/bespin-studios/datavalidation-iban/commit/dbf7f2286065c497acfa1670f194a99b613796b8))
+* pipeline and phpstan upgrade ([c1d7993](https://github.com/bespin-studios/datavalidation-iban/commit/c1d7993c4d80b8fb83d3b323eea09c1383a75ae3))
+
 ## [1.0.4](https://github.com/bespin-studios/datavalidation-iban/compare/v1.0.3...v1.0.4) (2024-09-25)
 
 
