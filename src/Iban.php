@@ -131,7 +131,7 @@ class Iban
     private static function getCountryObject(string $machineIban): ?CountryInterface
     {
         $country   = substr($machineIban, 0, 2);
-        $className = '\\Bespin\\IBAN\\Countries\\Country'.$country;
+        $className = '\\Bespin\\DataValidation\\Iban\\Countries\\Country'.$country;
         if (class_exists($className)) {
             $countryObject = new $className();
             if ($countryObject instanceof CountryInterface) {
