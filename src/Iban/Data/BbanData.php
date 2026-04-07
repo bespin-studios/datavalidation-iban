@@ -55,7 +55,7 @@ class BbanData
     public function getBankIdentifier(): string
     {
         $positionParts = explode('-', $this->bankIdentifierPosition);
-        $offset        = array_key_exists(0, $positionParts) ? intval($positionParts[0]) : null;
+        $offset        = intval($positionParts[0]);
         $length        = array_key_exists(1, $positionParts) ? intval($positionParts[1]) : null;
         return $this->getSubString($offset, $length, $this->bankIdentifierPattern);
     }
@@ -63,7 +63,7 @@ class BbanData
     public function getBranchIdentifier(): string
     {
         $positionParts = explode('-', $this->branchIdentifierPosition);
-        $offset        = array_key_exists(0, $positionParts) ? intval($positionParts[0]) : null;
+        $offset        = intval($positionParts[0]);
         $length        = array_key_exists(1, $positionParts) ? intval($positionParts[1]) : null;
         return $this->getSubString($offset, $length, $this->branchIdentifierPattern);
     }
